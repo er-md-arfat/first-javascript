@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>first javascript file</title>
+		<style>
+			button {
+				padding:10px;
+				margin:10px;
+				background-color:transparent;
+				border:1px solid black;
+				border-radius:10px;
+				font-size:18px;
+				font-weight:500;
+				cursor:pointer;
+			}
+			button:hover {
+				box-shadow:0px 0px 2px 2px rgba(0,0,0,0.15);
+			}
+			img {
+				border-radius:10px;
+				
+			}
+		</style>
+	</head>
+	
+	<body>
+		<center>
+			<h2 id="name">
+				Jellyfish
+			</h2>
+			<img id="myImage" src="Jellyfish.jpg" style="width:400px; height:300px;"><br><br>
+			<button checked="checked" id="btn1"  onclick=jellyfish();>
+				Jellyfish
+			</button>
+			<button id="btn2"  onclick=penguins();>
+				Penguins
+			</button>
+			<button id="btn3"  onclick=koala();>
+				Koala
+			</button>
+			<button id="btn4" onclick=tulips();>
+				Tulips
+			</button>
+		</center>
+		
+		<script>
+			
+			const button1 = document.getElementById('btn1'); 
+			const button2 = document.getElementById('btn2'); 
+			const button3 = document.getElementById('btn3'); 
+			const button4 = document.getElementById('btn4'); 
+			
+			function jellyfish(){
+				document.getElementById('myImage').src="Jellyfish.jpg";
+				document.getElementById('name').innerHTML="Jellyfish";
+				button1.style.backgroundColor = 'red';
+				button2.style.backgroundColor = 'white';
+				button3.style.backgroundColor = 'white';
+				button4.style.backgroundColor = 'white';
+				button1.style.color = "white";
+				button2.style.color = "black";
+				button3.style.color = "black";
+				button4.style.color = "black";
+			}
+			
+			function penguins(){
+				document.getElementById('myImage').src="Penguins.jpg";
+				document.getElementById('name').innerHTML="Penguins";
+				button1.style.backgroundColor = 'white'; 
+				button2.style.backgroundColor = 'red';
+				button3.style.backgroundColor = 'white';
+				button4.style.backgroundColor = 'white';
+				button1.style.color = "black";
+				button2.style.color = "white";
+				button3.style.color = "black";
+				button4.style.color = "black";
+			}
+			function koala(){
+				document.getElementById('myImage').src="Koala.jpg";
+				document.getElementById('name').innerHTML="Koala";
+				button1.style.backgroundColor = 'white'; 
+				button2.style.backgroundColor = 'white';
+				button3.style.backgroundColor = 'red';
+				button4.style.backgroundColor = 'white';
+				button1.style.color = "black";
+				button2.style.color = "black";
+				button3.style.color = "white";
+				button4.style.color = "black";
+			}
+			function tulips(){
+				document.getElementById('myImage').src="Tulips.jpg";
+				document.getElementById('name').innerHTML="Tulips";
+				button1.style.backgroundColor = 'white'; 
+				button2.style.backgroundColor = 'white';
+				button3.style.backgroundColor = 'white';
+				button4.style.backgroundColor = 'red';
+				button1.style.color = "black";
+				button2.style.color = "black";
+				button3.style.color = "black";
+				button4.style.color = "white";
+			}
+		</script>
+	</body>
+</html>
